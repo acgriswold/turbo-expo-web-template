@@ -4,8 +4,25 @@ This repo is the initial attempt to build a web and mobile app using turbo repo
 
 ## Getting started
 
+### Run all
 ```bash
-  pnpm run dev --filter web # run dev server for web application
+  pnpm install
+  pnpm build
+  pnpm dev
+```
+
+### Running web
+```bash
+  pnpm install
+  pnpm dev --filter web
+```
+
+### Running native (tunnel)
+```bash
+  pnpm install
+  pnpm build --filter native
+  cd apps/native
+  pnpm run start --tunnel
 ```
 
 ## What's inside?
